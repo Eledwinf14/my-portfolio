@@ -4,7 +4,7 @@ Este es mi portafolio hecho en HTML Css y jquery
 **Eduin fabian ardila ruiz**
 *[linkedIn](https://www.linkedin.com/in/eduin-fabian-ardila-ruiz-54a46722b)
 
-##ver ejemplo en vivo
+## ver ejemplo en vivo
 - [ENLACEGITHUBPAGES] (ENLACEGITHUBPAGES)
 
 ##contratacion -
