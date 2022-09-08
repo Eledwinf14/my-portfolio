@@ -70,7 +70,7 @@ body {
     left: 0;
     z-index: 1;
     filter: blur(40px);
-    animation: circulo1 50s linear infinite both;
+    animation: circulo1 30s linear infinite both;
     background: lightskyblue;
 }
 
