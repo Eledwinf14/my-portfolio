@@ -23,7 +23,7 @@ $(document).ready(function () {
 })
 
 function descargarPDF() {
-  var url = "/ruta/al/archivo/archivo.pdf";
+  var url = "/assets/hojadevidaBogota2023.pdf";
   var nombreArchivo = "archivo.pdf";
   var link = document.createElement("a");
   link.download = nombreArchivo;
