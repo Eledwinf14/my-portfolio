@@ -19,19 +19,19 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script src="js/app.js"></script>
 <script>
-    var menuToggle = document.querySelector('.menu-toggle');
-    var menu = document.querySelector('.menu');
-
-    menuToggle.addEventListener('click', function() {
-    menu.classList.toggle('visible');
-    });
-
-    menu.addEventListener('click', function() {
-    menu.classList.remove('visible');
-    });
-
+    function toggleBoton(){
+        var menuToggle = document.getElementById("menu-toggle");
+        var menu = document.getElementById("menu");
+    console.log("si sitve")
+    if (menu.style.display === "block") {
+   menu.style.display = "none";
+} else {
+    menu.style.display = "block";
+ }
+    }
+    
 function descargarPDF() {
-  var url = "/assets/hojadevidaBogota2023.pdf";
+  var url = "assets/hojadevidaBogota2023.pdf";
   var nombreArchivo = "hojadevida.pdf";
   var link = document.createElement("a");
   link.download = nombreArchivo;
@@ -66,14 +66,14 @@ function descargarPDF() {
         </svg>
     </div>
     <main class="main">
-        <div class="seccion">
-            <button style="display: block;" class="menu-toggle">☰</button>
-            <nav class="menu" >
-                <ul >
-                    <li><a href="#Inicio" title="Inicio">Inicio</a></li>
-                    <li><a href="#Curriculum" title="Curriculum">Curriculum</a></li>
-                    <li><a href="#Works" title="Works">Works</a></li>
-                    <li><a href="#About" title="About">About</a></li>
+        <div style="position: fixed;z-index: 99;">
+            <button onclick="toggleBoton()" id="menu-toggle" class="menu-toggle">☰</button>
+            <nav class="menu" id="menu">
+                <ul style="display: flex; flex-direction: column;align-content: flex-start;justify-content: space-between;list-style: none;text-align: initial;">
+                    <li><a style="text-decoration: none;padding:5px;" href="#Inicio" title="Inicio">Inicio</a></li>
+                    <li><a style="text-decoration: none;padding:5px;" href="#Curriculum" title="Curriculum">Curriculum</a></li>
+                    <li><a style="text-decoration: none;padding:5px;" href="#Works" title="Works">Works</a></li>
+                    <li><a style="text-decoration: none;padding:5px;" href="#About" title="About">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -110,7 +110,8 @@ function descargarPDF() {
             </section>
         </div>
         <section class="seccion Curriculum" id="Curriculum">
-            <h2 style="text-decoration: underline;">↓ Aqui mi Curriculum vitae ↓</h2>
+            <h2>↓ Aqui mi Curriculum vitae ↓</h2>
+             <img onclick="descargarPDF()" style="width: 180px;border-radius:100px;opacity:80%;margin-top:10px" src="assets/mano-eligiendo-el-concepto-del-curriculum-vitae-el-director-de-rr-hh-lleva-un-documento-con-el-curriculum-vitae-del-candidato-y-lo-invita-a-la-entrevista-contratacion-y-contratacion-dibujos-animados-2j2d28d.jpg" alt="">
              <button onclick="descargarPDF()">Descargar PDF</button>
         </section>
 
