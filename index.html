@@ -19,17 +19,24 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script src="js/app.js"></script>
 <script>
-    var menuToggle = document.querySelector('#menu-toggle');
-    var menu = document.querySelector('#menu');
-
-    menuToggle.addEventListener('click', function() {
-    menu.classList.toggle('visible');
-    });
-
-    menu.addEventListener('click', function() {
-    menu.classList.remove('visible');
-    });
-
+    function toggleBoton(){
+        var menuToggle = document.getElementById("menu-toggle");
+        var menu = document.getElementById("menu");
+    console.log("si sitve")
+    if (menu.style.display === "none") {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }
+        menuToggle.addEventListener('click', function() {
+        menu.classList.toggle('visible');
+        });
+    
+        menu.addEventListener('click', function() {
+        menu.classList.remove('visible');
+        });
+    }
+    
 function descargarPDF() {
   var url = "/assets/hojadevidaBogota2023.pdf";
   var nombreArchivo = "hojadevida.pdf";
@@ -67,7 +74,7 @@ function descargarPDF() {
     </div>
     <main class="main">
         <div class="seccion">
-            <button style="display: block;" id="menu-toggle" class="menu-toggle">☰</button>
+            <button onclick="toggleBoton()" id="menu-toggle" class="menu-toggle">☰</button>
             <nav class="menu" id="menu">
                 <ul >
                     <li><a href="#Inicio" title="Inicio">Inicio</a></li>
