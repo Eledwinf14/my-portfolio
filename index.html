@@ -66,10 +66,10 @@ function descargarPDF() {
         </svg>
     </div>
     <main class="main">
-        <div>
-            <button onclick="toggleBoton()" id="menu-toggle" class="menu-toggle">☰</button>
-            <nav class="menu" id="menu">
-                <ul style="display: flex;flex-direction:row;justify-content: space-between;list-style: none;">
+        <div class="seccion">
+            <button style="position: fixed;z-index: 99;" onclick="toggleBoton()" id="menu-toggle" class="menu-toggle">☰</button>
+            <nav class="menu" style="position: fixed;z-index: 99;" id="menu">
+                <ul style="display: flex; flex-direction: column;align-content: flex-start;justify-content: space-between;list-style: none;">
                     <li><a style="text-decoration: none;" href="#Inicio" title="Inicio">Inicio</a></li>
                     <li><a style="text-decoration: none;" href="#Curriculum" title="Curriculum">Curriculum</a></li>
                     <li><a style="text-decoration: none;" href="#Works" title="Works">Works</a></li>
