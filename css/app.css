@@ -377,7 +377,7 @@ background-color: #ddd;
 
 @media (min-width: 768px) {
 .menu {
-  display: block;
+  display: none;
 }
 
 }
