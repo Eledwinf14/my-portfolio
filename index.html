@@ -109,12 +109,23 @@ function descargarPDF() {
                 </section> 
             </section>
         </div>
-        <section class="seccion Curriculum" id="Curriculum">
-            <h2>↓ Aqui mi Curriculum vitae ↓</h2>
-            <a href="https://hoja-de-vida-programador-muchsez.gamma.site/" ></a>
-             <img onclick="descargarPDF()" style="width: 180px;border-radius:100px;opacity:80%;margin-top:10px" src="assets/mano-eligiendo-el-concepto-del-curriculum-vitae-el-director-de-rr-hh-lleva-un-documento-con-el-curriculum-vitae-del-candidato-y-lo-invita-a-la-entrevista-contratacion-y-contratacion-dibujos-animados-2j2d28d.jpg" alt="">
-             <button onclick="descargarPDF()">Descargar PDF</button>
-        </section>
+     <section class="seccion Curriculum" id="Curriculum">
+    <h2>↓ Aquí mi Curriculum Vitae ↓</h2>
+    <div style="display:flex; flex-direction: column; align-items: center; gap: 20px;">
+        <div>
+            <h3>Descargar archivo</h3>
+            <img onclick="descargarPDF()" style="width: 150px; border-radius: 50%; opacity: 0.8; margin-top: 10px; cursor: pointer;" src="assets/mano-eligiendo-el-concepto-del-curriculum-vitae-el-director-de-rr-hh-lleva-un-documento-con-el-curriculum-vitae-del-candidato-y-lo-invita-a-la-entrevista-contratacion-y-contratacion-dibujos-animados-2j2d28d.jpg" alt="Descargar Curriculum Vitae">
+            <button onclick="descargarPDF()">Descargar PDF</button>
+        </div>
+        <div>
+            <h3>Ver desde la web</h3>
+            <a href="https://hoja-de-vida-programador-muchsez.gamma.site/" target="_blank" style="display: inline-block;">
+                <img src="assets/curriculumweb.png" alt="Curriculum Vitae Online" style="width: 100px; border-radius: 10px;">
+            </a>
+            <p style="margin-top: 5px;">Ver mi currículum online.</p>
+        </div>
+    </div>
+</section>
 
         <section class="seccion works" id="Works">
             <h2 class="h2">Trabajos</h2>
