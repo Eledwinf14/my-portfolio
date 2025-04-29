@@ -7,5 +7,5 @@ Este es mi portafolio hecho en HTML Css y jquery
 ## ver ejemplo en vivo
 - [https://eledwinf14.github.io/my-portfolio/] (https://eledwinf14.github.io/my-portfolio/)
 
-##contratacion -
+##contacto -
 si quieres contratarme me puedes escribir al correo eledwinfabianardila@gmail.com - eledwinfabianardila2@gmail.com
